@@ -21,5 +21,8 @@ const text = document.getElementById('#text');
 countdownFrom10OnClick$.subscribe({
   next: (text) => {
     countdownElem.innerHTML = `${text}`;
+    if(text=="0")
+      document.getElementById("tata").style.visibility = "visible";
   },
 });
+
